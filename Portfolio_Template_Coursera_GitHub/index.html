@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive design student portfolio adapted from the official Bootstrap 5 starter template.">
+  <meta name="theme-color" content="#0b1834">
+  <title>Studio Nova | Template-Based Portfolio</title>
+  <!-- Template basis: official Bootstrap 5 starter template: https://getbootstrap.com/docs/5.3/examples/starter-template/ -->
+  <!-- Bootstrap 5.3.9 loaded from CDN; local custom CSS provides a usable fallback without network. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Studio Nova home"><span class="brand-symbol" aria-hidden="true">N<span>✳</span></span><span>studio<span class="brand-highlight">nova.</span></span></a>
+    <button class="nav-toggle" type="button" aria-controls="primaryMenu" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+    <div id="primaryMenu" class="nav-links">
+      <a href="#work" class="nav-link-item">Projects</a>
+      <a href="#about" class="nav-link-item">About</a>
+      <a href="#skills" class="nav-link-item">Skills</a>
+      <a href="#contact" class="nav-link-item">Contact</a>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" title="Toggle dark mode"><span aria-hidden="true">☾</span><span class="theme-label">Dark mode</span></button>
+    </div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero container" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="pulse" aria-hidden="true"></span> WEB DESIGN STUDENT PORTFOLIO <span class="eyebrow-dot">•</span> 2026</div>
+      <h1 id="hero-title">Designing websites <em>with purpose.</em></h1>
+      <p class="hero-lead">A collection of thoughtful, responsive web projects—built with a Bootstrap template and personalized with HTML, CSS, and JavaScript.</p>
+      <div class="hero-actions"><a class="btn btn-primary-hero" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-outline-hero" href="#about">Get to know me <span aria-hidden="true">→</span></a></div>
+      <div class="hero-stats" aria-label="Portfolio highlights"><div><strong>03</strong><span>Sample projects</span></div><div><strong>04+</strong><span>Interactive features</span></div><div><strong>100%</strong><span>Responsive layout</span></div></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Stylized design studio interface illustration with responsive website previews">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="art-panel"><div class="panel-top"><i></i><i></i><i></i><span>studio-nova.example</span></div><div class="panel-body"><div class="panel-sidebar"><div class="side-logo"></div><span></span><span></span><span></span><span></span></div><div class="panel-preview"><small>DESIGN / BUILD / IMPROVE</small><h3>Good design.<br>Better experiences.</h3><div class="preview-line w70"></div><div class="preview-line w50"></div><div class="preview-image"><div class="preview-sun"></div><div class="mountain m1"></div><div class="mountain m2"></div></div></div></div></div>
+      <div class="floating-note">✦ <span>Built with Bootstrap<br><small>Responsive by default</small></span></div>
+      <div class="mini-phone"><div class="notch"></div><div class="mini-top"></div><div class="mini-heading"></div><div class="mini-heading short"></div><div class="mini-cover"></div><div class="mini-slab"></div><div class="mini-slab"></div></div>
+    </div>
+  </section>
+  <div class="marquee-bar" aria-hidden="true"><div class="container marquee-content"><span>RESPONSIVE LAYOUTS</span><b>✳</b><span>CREATIVE THINKING</span><b>✳</b><span>ACCESSIBLE INTERFACES</span><b>✳</b><span>BOOTSTRAP 5</span><b>✳</b><span>WEB DESIGN</span></div></div>
+  <section id="work" class="section portfolio-section" aria-labelledby="work-title">
+    <div class="container"><div class="section-heading"><div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Projects with <span>personality.</span></h2></div><p>Explore a few example concepts that showcase layouts, interactions and responsive design.</p></div>
+      <div class="filters" role="group" aria-label="Filter portfolio projects"><button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All projects</button><button class="filter-chip" type="button" data-filter="landing" aria-pressed="false">Landing pages</button><button class="filter-chip" type="button" data-filter="portfolio" aria-pressed="false">Portfolio</button><button class="filter-chip" type="button" data-filter="interface" aria-pressed="false">Interface</button></div>
+      <div class="row projects-grid g-4" id="projectGrid">
+        <article class="col-lg-4 col-md-6 project-item" data-category="landing"><div class="project-card"><div class="project-visual visual-peach"><div class="sample-browser"><div class="sample-top"><i></i><i></i><i></i></div><div class="sample-landing"><div class="sample-tag">BRAND / PRODUCT</div><div class="sample-head"></div><div class="sample-head short"></div><div class="sample-cta"></div><div class="sample-square"></div></div></div><span class="project-number">01</span></div><div class="project-info"><span class="project-type">LANDING PAGE</span><h3>Harbor — Digital Landing</h3><p>A simple, conversion-focused marketing page with modern layout patterns.</p><span class="tag">Bootstrap Grid</span><span class="tag">Responsive</span></div></div></article>
+        <article class="col-lg-4 col-md-6 project-item" data-category="portfolio"><div class="project-card"><div class="project-visual visual-lilac"><div class="creative-grid"><div class="cg-a"></div><div class="cg-b"><span>CREATIVE<br>PORTFOLIO</span></div><div class="cg-c"></div><div class="cg-d"></div></div><span class="project-number">02</span></div><div class="project-info"><span class="project-type">PORTFOLIO</span><h3>Frames — Creator Showcase</h3><p>A spacious project gallery with bold typography and responsive cards.</p><span class="tag">CSS</span><span class="tag">Cards</span></div></div></article>
+        <article class="col-lg-4 col-md-6 project-item" data-category="interface"><div class="project-card"><div class="project-visual visual-blue"><div class="ui-window"><div class="ui-header"><span></span><span></span></div><div class="ui-row"><div class="ui-left"></div><div class="ui-right"><b></b><b></b><b></b></div></div><div class="ui-button"></div></div><span class="project-number">03</span></div><div class="project-info"><span class="project-type">INTERFACE DESIGN</span><h3>Flow — Contact Experience</h3><p>A focused contact layout with clear labels and inline form validation.</p><span class="tag">JavaScript</span><span class="tag">Accessibility</span></div></div></article>
+      </div>
+      <p id="filterStatus" class="filter-status" aria-live="polite">Showing all 3 projects.</p>
+    </div>
+  </section>
+  <section id="about" class="section about-section" aria-labelledby="about-title"><div class="container about-grid"><div class="about-graphic"><div class="circle-outer"><div class="circle-center"><div class="flower">✳</div><p>CURIOUS<br>BY DESIGN.</p></div></div><div class="small-sticker">learn • create<br>• repeat ↗</div></div><div class="about-content"><p class="section-kicker">02 / MY STORY</p><h2 id="about-title">Learning to build<br><span>better for everyone.</span></h2><p>Hi! I'm a web design student exploring what makes digital experiences useful, attractive and accessible. I enjoy taking a basic Bootstrap template and turning it into something with its own character.</p><p>This portfolio is a course demonstration project. The visuals and project concepts are illustrative rather than client work.</p><a href="#contact" class="text-link">Let's connect <span aria-hidden="true">↗</span></a></div></div></section>
+  <section id="skills" class="section skills-section" aria-labelledby="skills-title"><div class="container"><div class="section-heading"><div><p class="section-kicker">03 / TOOLKIT</p><h2 id="skills-title">Things I'm <span>exploring.</span></h2></div><p>Foundations that help turn a template into a responsive, personal website.</p></div><div class="row g-4 skills-grid"><div class="col-lg-3 col-sm-6 skill-col"><div class="skill-card"><span class="skill-icon">⌘</span><h3>HTML5</h3><p>Semantic structure and clear content hierarchy.</p></div></div><div class="col-lg-3 col-sm-6 skill-col"><div class="skill-card"><span class="skill-icon">◈</span><h3>CSS3</h3><p>Styles, layouts, transitions and visual polish.</p></div></div><div class="col-lg-3 col-sm-6 skill-col"><div class="skill-card"><span class="skill-icon">▦</span><h3>Bootstrap</h3><p>Responsive grid, utilities and components.</p></div></div><div class="col-lg-3 col-sm-6 skill-col"><div class="skill-card"><span class="skill-icon">✳</span><h3>JavaScript</h3><p>Interactivity, validation and accessible feedback.</p></div></div></div></div></section>
+  <section class="section faqs-section" aria-labelledby="faq-title"><div class="container faq-layout"><div><p class="section-kicker">04 / QUICK QUESTIONS</p><h2 id="faq-title">Good things<br><span>to know.</span></h2><p class="faq-sub">Open each question to see the answer.</p></div><div class="faq-list"><details><summary>What template is this based on? <span aria-hidden="true">+</span></summary><p>This site adapts the official Bootstrap 5 starter template and customizes the grid, layout, typography, illustration and interaction.</p></details><details><summary>Does the design work on phones? <span aria-hidden="true">+</span></summary><p>Yes. Responsive breakpoints stack cards vertically, adjust the hero layout and switch the navigation to a compact menu.</p></details><details><summary>Is the contact form connected to an inbox? <span aria-hidden="true">+</span></summary><p>No. This demonstration validates inputs in the browser only and does not send messages or store personal information.</p></details></div></div></section>
+  <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div class="container contact-wrap"><div class="contact-copy"><p class="section-kicker">05 / SAY HELLO</p><h2 id="contact-title">Have an idea?<br><span>Let's make it real.</span></h2><p>Try the form to see a front-end validation demonstration. It is an example: no message will be transmitted.</p><div class="contact-footnote">✳ Designed to feel easy to use.</div></div><form id="contactForm" class="contact-form" novalidate><div class="form-row"><div class="form-group"><label for="contactName">Your name</label><input id="contactName" name="name" type="text" placeholder="e.g. Alex Lee" autocomplete="name" required minlength="2"><small class="field-error" id="nameError"></small></div><div class="form-group"><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" placeholder="alex@example.com" autocomplete="email" required><small class="field-error" id="emailError"></small></div></div><div class="form-group"><label for="contactMessage">What would you like to discuss?</label><textarea id="contactMessage" name="message" rows="4" placeholder="Tell me a little about your idea..." minlength="10" required></textarea><small class="field-error" id="messageError"></small></div><button class="btn btn-primary-hero form-submit" type="submit">Test the form <span aria-hidden="true">↗</span></button><p class="form-disclaimer">Demo only — no messages are sent.</p><div id="formStatus" class="form-status" role="status" aria-live="polite"></div></form></div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a href="#top" class="brand footer-brand"><span class="brand-symbol" aria-hidden="true">N<span>✳</span></span><span>studio<span class="brand-highlight">nova.</span></span></a><p>Template-based course portfolio • © <span id="year">2026</span></p><a href="#top" class="back-to-top">Back to top ↑</a></div></footer>
+<button type="button" id="scrollTopBtn" class="scroll-float" aria-label="Scroll back to top">↑</button>
+</body>
+</html>
